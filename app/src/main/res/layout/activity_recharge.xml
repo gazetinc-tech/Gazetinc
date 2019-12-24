@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/prepaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:text="Prepaid"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/postpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Postpaid"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/layout_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/relative_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/background_round_grey_corner">
+
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/drawableleft"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/ic_menu_camera" />-->
+
+                            <AutoCompleteTextView
+                                android:id="@+id/auto_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:alpha="0.8"
+                                android:background="@null"
+                                android:drawableLeft="@mipmap/ic_mobile"
+                                android:drawablePadding="10dp"
+                                android:hint="Enter Number"
+                                android:inputType="number"
+                                android:overlapAnchor="false"
+                                android:textSize="14dp" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/error"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="Error"
+                            android:textColor="@color/red"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <com.gazetinc.shopninja.Utility.CustomEditText
+                        android:id="@+id/edt_select_operator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        custom:editable="false"
+                        custom:error=""
+                        custom:hint="Select Operator"
+                        custom:leftdrawable="true"
+                        custom:textdrawable="true"
+                        custom:text=""
+                        custom:types="number" />
+
+
+                    <com.gazetinc.shopninja.Utility.CustomEditText
+                        android:id="@+id/edt_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        custom:error=""
+                        custom:hint="Enter Amount"
+                        custom:leftdrawable="true"
+                        custom:text=""
+                        custom:types="number" />
+
+
+                    <Button
+                        android:id="@+id/btn_recharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary"
+                        android:stateListAnimator="@null"
+                        android:text="Continue"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

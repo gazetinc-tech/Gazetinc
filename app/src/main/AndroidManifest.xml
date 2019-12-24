@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gazetinc.shopninja">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+
+    <application
+        android:name=".ShopninjaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/shopninja_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/shopninja_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="Register"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.ForgetPasswordActivity" />
+        <activity android:name=".Activity.TermsandConditionsActivity" />
+        <activity android:name=".Activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:label="Recharge"/>
+        <activity
+            android:name=".Activity.OtpActivity"
+            android:label="Otp"
+            android:theme="@style/AppThemeotp"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.FaqActivity" />
+        <activity android:name=".Activity.PaymentDemo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.ShareActivity" />
+        <activity android:name=".Activity.ConvertToPremium" />
+        <activity android:name=".Activity.TransactionActivity" />
+        <activity android:name=".Activity.SelectOperatorActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_BM4umL9VjVnfaq" />
+    </application>
+
+</manifest>

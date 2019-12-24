@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Options">
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="hint" format="string" localization="suggested" />
+        <attr name="error" format="string" localization="suggested" />
+        <attr name="types" format="string" localization="suggested" />
+        <attr name="leftdrawable" format="string" localization="suggested" />
+        <attr name="rightdrawable" format="string" localization="suggested" />
+        <attr name="textdrawable" format="string" localization="suggested" />
+        <attr name="icon" format="integer" />
+        <attr name="editable" format="boolean" localization="suggested" />
+    </declare-styleable>
+</resources>

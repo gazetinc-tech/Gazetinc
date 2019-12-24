@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <com.gazetinc.shopninja.Utility.CustomEditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:error=""
+        custom:hint="Name"
+        custom:icon="@mipmap/ic_user"
+        custom:text=""
+        custom:types="text" />
+
+
+    <com.gazetinc.shopninja.Utility.CustomEditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:error=""
+        custom:hint="Enter email"
+        custom:icon="@mipmap/ic_mail"
+        custom:text=""
+        custom:types="email" />
+
+    <com.gazetinc.shopninja.Utility.CustomEditText
+        android:id="@+id/edt_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:error=""
+        custom:hint="Enter Mobile"
+        custom:icon="@mipmap/ic_mobile"
+        custom:text=""
+        custom:types="number" />
+
+
+    <com.gazetinc.shopninja.Utility.CustomEditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:error=""
+        custom:hint="Enter Password"
+        custom:icon="@mipmap/ic_password"
+        custom:text=""
+        custom:types="password" />
+
+    <com.gazetinc.shopninja.Utility.CustomEditText
+        android:id="@+id/edt_refer_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:error=""
+        custom:hint="Enter Refer Code"
+        custom:icon="@mipmap/ic_password"
+        custom:text=""
+        custom:types="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the " />
+
+        <TextView
+            android:id="@+id/terms_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Create Account"
+        android:textColor="@color/white" />
+
+</LinearLayout>

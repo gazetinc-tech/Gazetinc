@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:text="@string/verification_code"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_subtext"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/number_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9523558483"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Resend Otp)"
+            android:textSize="16dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:inputType="number"
+        android:editable="true"
+        android:enabled="true"
+        android:itemBackground="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        app:itemCount="4"
+        app:viewType="line"
+        />
+
+    <Button
+        android:id="@+id/validate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/validate"
+        android:textColor="@android:color/white" />
+</LinearLayout>
